@@ -1,1 +1,8 @@
-bb
+Step 1: Install Kubectl, ekctl, AWS CLI
+Install following on your ubuntu machine
+
+kubectl – A command line tool for working with Kubernetes clusters. For more information, see Installing or updating kubectl.
+
+eksctl – A command line tool for working with EKS clusters that automates many individual tasks. For more information, see Installing or updating.
+
+AWS CLI – A command line tool for working with AWS services, including Amazon EKS. For more information, see Installing, updating, and uninstalling the AWS CLI in the AWS Command Line Interface User Guide.
