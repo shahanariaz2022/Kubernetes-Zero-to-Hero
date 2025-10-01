@@ -60,7 +60,7 @@ Kubectl get svc -n game-2048 #(external-ip empty)
 Kubectl get ingress -n game-2048 #(address field empty)
 ```
 
-### Step 5: commands to configure IAM OIDC provider 
+### Step 5: Configure IAM OIDC provider 
 
 ```
 export cluster_name=demo-cluster
