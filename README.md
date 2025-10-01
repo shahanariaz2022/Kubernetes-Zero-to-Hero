@@ -26,7 +26,7 @@ You can get these from security credential on aws portal.
 
 ### Step 2: Create EKS Cluster
 ```bash
-Eksctl create cluster --name my-cluster --region region-code --fargate
+Eksctl create cluster --name my-cluster --region us-east-1 --fargate
 ```
 Change cluster name and region according to yours.  
 We use --fargate with eksctl create cluster so that the cluster runs workloads on AWS Fargate (serverless containers) instead of managing EC2 worker nodes manually.
@@ -40,7 +40,7 @@ Run command with your cluster name
 ```bash
 Create fargate profile
 eksctl create fargateprofile \
-    --cluster demo-cluster \
+    --cluster my-cluster \
     --region us-east-1 \
     --name alb-sample-app \  (name of app)
     --namespace game-2048 (namespace name)
@@ -74,7 +74,7 @@ aws iam create-policy \
 3. Create IAM role
 ``` bash
 eksctl create iamserviceaccount \
-  --cluster=<your-cluster-name> \
+  --cluster=my-cluster \
   --namespace=kube-system \
   --name=aws-load-balancer-controller \
   --role-name AmazonEKSLoadBalancerControllerRole \
