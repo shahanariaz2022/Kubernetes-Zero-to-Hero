@@ -34,7 +34,8 @@ We use --fargate with eksctl create cluster so that the cluster runs workloads o
 you need to configure kubectl to work with EKS cluster  
 Run command with your cluster name
    ```bash
-    aws eks update-kubeconfig --name your-cluster-name
+    aws eks update-kubeconfig --name my-cluster --region us-east-1
+
    ```
 ### Step 3: Create Fargate Profile  
 ```bash
