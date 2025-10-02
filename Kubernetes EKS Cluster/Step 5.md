@@ -1,6 +1,5 @@
 ### Create Fargate Profile  
 ```bash
-Create fargate profile
 eksctl create fargateprofile \
     --cluster my-cluster \
     --region us-east-1 \
