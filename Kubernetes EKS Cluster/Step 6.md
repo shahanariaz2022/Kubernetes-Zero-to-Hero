@@ -4,7 +4,7 @@ kubectl apply -f https://raw.githubusercontent.com/kubernetes-sigs/aws-load-bala
 ```
 Run commands to check  
 ```bash
-Kubectl get pods -n game-2048
-Kubectl get svc -n game-2048 #(external-ip empty)
-Kubectl get ingress -n game-2048 #(address field empty)
+kubectl get pods -n game-2048
+kubectl get svc -n game-2048 #(external-ip empty)
+kubectl get ingress -n game-2048 #(address field empty)
 ```
